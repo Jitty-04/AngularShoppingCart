@@ -8,6 +8,8 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
+import { ViewtableComponent } from './viewtable/viewtable.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -16,6 +18,14 @@ const myrouter:Routes=[
   {
     path:"adminhome",
     component:AdminhomeComponent
+  },
+  {
+    path:"add",
+    component:AddproductComponent
+  },
+  {
+    path:"view",
+    component:ViewtableComponent
   }
 
 ]
@@ -25,7 +35,9 @@ const myrouter:Routes=[
     AppComponent,
     AdminloginComponent,
     AdminhomeComponent,
-    NavComponent
+    NavComponent,
+    AddproductComponent,
+    ViewtableComponent
   ],
   imports: [
     BrowserModule,
