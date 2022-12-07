@@ -12,6 +12,7 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { ViewtableComponent } from './viewtable/viewtable.component';
 import { SearchComponent } from './search/search.component';
 import { UseregComponent } from './usereg/usereg.component';
+import { UserlogComponent } from './userlog/userlog.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -37,6 +38,10 @@ const myrouter:Routes=[
     path:"userregistration",
     component:UseregComponent
 
+  },
+  {
+    path:"usersignup",
+    component:UserlogComponent
   }
 
 ]
@@ -50,7 +55,8 @@ const myrouter:Routes=[
     AddproductComponent,
     ViewtableComponent,
     SearchComponent,
-    UseregComponent
+    UseregComponent,
+    UserlogComponent
   ],
   imports: [
     BrowserModule,
