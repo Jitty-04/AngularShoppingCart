@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { ViewtableComponent } from './viewtable/viewtable.component';
+import { SearchComponent } from './search/search.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -26,6 +27,10 @@ const myrouter:Routes=[
   {
     path:"view",
     component:ViewtableComponent
+  },
+  {
+    path:"search",
+    component:SearchComponent
   }
 
 ]
@@ -37,7 +42,8 @@ const myrouter:Routes=[
     AdminhomeComponent,
     NavComponent,
     AddproductComponent,
-    ViewtableComponent
+    ViewtableComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
