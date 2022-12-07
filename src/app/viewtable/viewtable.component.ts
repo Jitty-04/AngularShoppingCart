@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-viewtable',
@@ -6,6 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./viewtable.component.css']
 })
 export class ViewtableComponent {
-  data:any=[]
+  constructor(private api:ApiService){
+    api.fetchProduct().subscribe(
+      (response:any)=>
+      {
+        this.data=response;
+      }
+    )
+  }
+  
+    data:any=[] 
+
 
 }
