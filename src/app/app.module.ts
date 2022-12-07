@@ -11,6 +11,7 @@ import { NavComponent } from './nav/nav.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { ViewtableComponent } from './viewtable/viewtable.component';
 import { SearchComponent } from './search/search.component';
+import { UseregComponent } from './usereg/usereg.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -31,6 +32,11 @@ const myrouter:Routes=[
   {
     path:"search",
     component:SearchComponent
+  },
+  {
+    path:"userregistration",
+    component:UseregComponent
+
   }
 
 ]
@@ -43,7 +49,8 @@ const myrouter:Routes=[
     NavComponent,
     AddproductComponent,
     ViewtableComponent,
-    SearchComponent
+    SearchComponent,
+    UseregComponent
   ],
   imports: [
     BrowserModule,
