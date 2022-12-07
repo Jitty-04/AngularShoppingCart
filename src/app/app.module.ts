@@ -13,6 +13,8 @@ import { ViewtableComponent } from './viewtable/viewtable.component';
 import { SearchComponent } from './search/search.component';
 import { UseregComponent } from './usereg/usereg.component';
 import { UserlogComponent } from './userlog/userlog.component';
+import {HttpClientModule} from '@angular/common/http';
+
 const myrouter:Routes=[
   {
     path:"",
@@ -62,7 +64,8 @@ const myrouter:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myrouter)
+    RouterModule.forRoot(myrouter),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
