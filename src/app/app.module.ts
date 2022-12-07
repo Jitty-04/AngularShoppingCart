@@ -7,13 +7,14 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { NavComponent } from './nav/nav.component';
 const myrouter:Routes=[
   {
     path:"",
     component:AdminloginComponent
   },
   {
-    path:"/adminhome",
+    path:"adminhome",
     component:AdminhomeComponent
   }
 
@@ -23,7 +24,8 @@ const myrouter:Routes=[
   declarations: [
     AppComponent,
     AdminloginComponent,
-    AdminhomeComponent
+    AdminhomeComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
