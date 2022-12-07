@@ -8,6 +8,7 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
 const myrouter:Routes=[
   {
     path:"",
@@ -16,6 +17,10 @@ const myrouter:Routes=[
   {
     path:"adminhome",
     component:AdminhomeComponent
+  },
+  {
+    path:"add",
+    component:AddproductComponent
   }
 
 ]
@@ -25,7 +30,8 @@ const myrouter:Routes=[
     AppComponent,
     AdminloginComponent,
     AdminhomeComponent,
-    NavComponent
+    NavComponent,
+    AddproductComponent
   ],
   imports: [
     BrowserModule,
