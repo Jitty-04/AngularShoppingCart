@@ -14,6 +14,7 @@ import { SearchComponent } from './search/search.component';
 import { UseregComponent } from './usereg/usereg.component';
 import { UserlogComponent } from './userlog/userlog.component';
 import {HttpClientModule} from '@angular/common/http';
+import { UserhomeComponent } from './userhome/userhome.component';
 
 const myrouter:Routes=[
   {
@@ -44,6 +45,10 @@ const myrouter:Routes=[
   {
     path:"usersignup",
     component:UserlogComponent
+  },
+  {
+     path:"userhome",
+     component:UserhomeComponent
   }
 
 ]
@@ -58,7 +63,8 @@ const myrouter:Routes=[
     ViewtableComponent,
     SearchComponent,
     UseregComponent,
-    UserlogComponent
+    UserlogComponent,
+    UserhomeComponent
   ],
   imports: [
     BrowserModule,
