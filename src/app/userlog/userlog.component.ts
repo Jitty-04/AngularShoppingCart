@@ -22,7 +22,7 @@ export class UserlogComponent {
       {
         console.log(response)
         if(response.length==0){
-          alert("Ivalid email or password")
+          alert("Invalid email or password")
           this.email=""
           this.password=""
         }
