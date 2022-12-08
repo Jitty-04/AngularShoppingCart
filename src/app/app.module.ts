@@ -15,6 +15,7 @@ import { UseregComponent } from './usereg/usereg.component';
 import { UserlogComponent } from './userlog/userlog.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UserhomeComponent } from './userhome/userhome.component';
+import { Nav2Component } from './nav2/nav2.component';
 
 const myrouter:Routes=[
   {
@@ -64,7 +65,8 @@ const myrouter:Routes=[
     SearchComponent,
     UseregComponent,
     UserlogComponent,
-    UserhomeComponent
+    UserhomeComponent,
+    Nav2Component
   ],
   imports: [
     BrowserModule,
