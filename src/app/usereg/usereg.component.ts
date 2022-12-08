@@ -29,7 +29,7 @@ readValues=()=>
     {
       console.log(response)
       if (response.status=="success") {
-        alert("user added successfully")
+        alert("user registered successfully")
         this.name=""
         this.address=""
         this.phno=""
