@@ -32,7 +32,7 @@ export class UserlogComponent {
           let userid=response.userid
           console.log(userid)
           localStorage.setItem("userInfo",userid)
-          this.route.navigate(["userhome"])
+          this.route.navigate(["viewprofile"])
 
         }
         
