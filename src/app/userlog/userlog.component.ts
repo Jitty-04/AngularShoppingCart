@@ -29,6 +29,9 @@ export class UserlogComponent {
         else{
           
           this.searchUsers=response;
+          let userid=response.userid
+          console.log(userid)
+          localStorage.setItem("userInfo",userid)
           this.route.navigate(["userhome"])
 
         }
